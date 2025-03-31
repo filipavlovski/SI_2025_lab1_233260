@@ -70,7 +70,7 @@ class TaskManager {
     // 2. Find all completed tasks
     public List<Task> getCompletedTasks() {
         // TODO: Implement logic to return completed tasks
-        return new ArrayList<>();
+        return tasks.stream().filter(Task::isCompleted).collect(Collectors.toList());
     }
 
     // 3. List tasks sorted by name
@@ -92,13 +92,21 @@ class TaskManager {
     // 6. Find the highest-priority unfinished task
     public List<Task> getMostUrgentTasks() {
         // TODO: Implement logic to find most urgent tasks
-        return new ArrayList<>();
+        return tasks.stream().filter(t -> t.getPriority()==Priority.HIGH).collect(Collectors.toList());
+       
     }
 
     // 7. Count tasks per category
     public Map<String, Integer> countTasksPerCategory() {
         // TODO: Implement counting logic
-        return new HashMap<>();
+        Map<String, Integer> categoryCount = new HashMap<>();
+    
+    for (int i = 0; i < tasks.size(); i++) {
+        String category = tasks.get(i).getCategory();
+        categoryCount.put(category, categoryCount.getOrDefault(category, 0) + 1);
+    }
+    
+    return categoryCount;
     }
 
     // 8. Mark a task as completed by name
