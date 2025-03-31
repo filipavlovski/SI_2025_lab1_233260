@@ -1,1 +1,18 @@
-Filip Pavlovski
+13. git fetch origin
+
+14. git checkout 2-find-all-completed-tasks
+
+15. vo java fajlot editiram i implementiram funkcija
+
+16. git add SI2025Lab1Main.java 
+    git commit -m "Implement Find all completed tasks"
+
+17. git push origin 2-find-all-completed-tasks
+18. 
+20. na github vo pull requests go otvaram pull requestot i klikam na merge request
+	(za eden mi dade konflikt poradi loso napisana funkcija vo java fajlot, go popraviv i posle rabotese)
+
+22. git checkout master 
+	git merge 7-count-tasks-per-category
+	(i tuka mi dade deka ima konflikt, nesto so fajlot isto problem vo funkcijata imav 2 returna staveno po greska)
+23. git push origin master
