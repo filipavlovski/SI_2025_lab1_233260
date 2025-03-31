@@ -1,0 +1,20 @@
+$ git log --oneline --graph --all
+*   022281a (HEAD -> master, origin/master, origin/HEAD) Implemented 2, resolved conflicts
+|\
+| *   135e334 Merge pull request #11 from filipavlovski/6-find-the-highest-priority-unfinished-task
+| |\
+| | *   f007a84 Merge branch 'master' into 6-find-the-highest-priority-unfinished-task
+| | |\
+| | |/
+| |/|
+| * |   4acc3e1 Merge pull request #12 from filipavlovski/7-count-tasks-per-category
+| |\ \
+| | * | 2848da7 (origin/7-count-tasks-per-category, 7-count-tasks-per-category) Implement Count tasks per category
+| |/ /
+| | * b34e10b (origin/6-find-the-highest-priority-unfinished-task, 6-find-the-highest-priority-unfinished-task) Implement Fi
+nd the highest-priority unfinished task
+| |/
+* / 093f105 (origin/2-find-all-completed-tasks, 2-find-all-completed-tasks) Implement Find all completed tasks
+|/
+* c40ddda Add starter code
+* 0fb67b7 Initial commit:
